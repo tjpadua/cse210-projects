@@ -6,19 +6,19 @@ class Program
     {
 
         // Part 1 & 2 - user specified the magic number
-        // Console.Write("Whats is the magic number? ");
+        // Console.Write("What is the magic number? ");
         // int magicnumber = int.Parse(Console.ReadLine());
 
         // Part 3 - use a random number
        Random randomnumber = new Random();
-       int magicnumber = randomnumber.Next(1,1010;)
+       int magicnumber = randomnumber.Next(1,101);
 
         int guess = -1;
 
          // do-while loop
         while (guess != magicnumber)
         {
-            Console.Write("What is your quess? ");
+            Console.Write("What is your guess? ");
             guess = int.Parse(Console.ReadLine());
 
             if (magicnumber > guess)
