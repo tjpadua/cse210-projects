@@ -9,16 +9,16 @@ class Program
 
         // 3. Set the member variables using the dot notation 
         //    (for example, job1._jobTitle = "Software Engineer";
-        job1._jobTitle = "Software Engineer";
-        job1._company = "Microsoft";
+        job1._jobTitle = "Mathematics Teacher";
+        job1._company = "St. Alexius";
         job1._startYear = 2019;
-        job1._endYear = 2022;
+        job1._endYear = 2020;
 
         // 5. Create a second job, set its variables, 
         //    display this company on the screen as well.
         Job job2 = new Job();
-        job2._jobTitle = "Manager";
-        job2._company = "Apple";
+        job2._jobTitle = "Amazon Manager";
+        job2._company = "Seller Interactive";
         job2._startYear = 2022;
         job2._endYear = 2023;
 
@@ -32,13 +32,11 @@ class Program
 
 
         Resume myResume = new Resume();
-        myResume._name = "Allison Rose";
+        myResume._name = "Trizsa Padua";
 
         myResume._jobs.Add(job1);
         myResume._jobs.Add(job2);
 
         myResume.Display();
-
-
     }
 }
