@@ -9,7 +9,7 @@ class Program
 
         // 3. Set the member variables using the dot notation 
         //    (for example, job1._jobTitle = "Software Engineer";
-        job1._jobTitle = "Mathematics Teacher";
+        job1._jobTitle = "Math Teacher";
         job1._company = "St. Alexius";
         job1._startYear = 2019;
         job1._endYear = 2020;
