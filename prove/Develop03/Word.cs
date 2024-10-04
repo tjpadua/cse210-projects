@@ -5,20 +5,20 @@ public class Word
     private string _text;
     private bool _isHididden;
 
-    public Word(string _text)
+    public Word(string text)
     {
-        _text = "";
+        _text = text;
 
     }
 
     public void Hide()
     {
-        Console.WriteLine("AAA");
+        //Console.WriteLine("AAA");
     }
 
     public void Show()
     {
-        Console.WriteLine("BBB");
+        //Console.WriteLine("BBB");
     }
 
     public void IsHididden()
@@ -28,6 +28,6 @@ public class Word
 
     public void GetDisplayText()
     {
-        Console.WriteLine("");
+        //Console.WriteLine("");
     }
 }

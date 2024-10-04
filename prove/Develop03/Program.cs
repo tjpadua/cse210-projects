@@ -4,13 +4,10 @@ class Program
 {
     static void Main(string[] args)
     {
-       //Console.WriteLine("Proverbs 3:5-6 Trust in the LORD with all thine heart; and lean not unto thine own understanding. 
-       //6 In all thy ways acknowledge him, and he shall direct thy paths.");
-
-        // Journal journal = new Journal();
-        // Scripture scripture = new Scripture();       
-        // Word word = new Word();
-        // Reference reference = new Reference();
+        //Journal journal = new Journal();
+        //Scripture scripture = new Scripture();       
+        //Word word = new Word();
+        //Reference reference = new Reference();
         bool running = true;
 
         while (running)
@@ -20,11 +17,12 @@ class Program
         
             switch (Console.ReadLine())
             {
-                
+                //case "enter":
+                //    break;
                 
                 case "quit":
                     running = false;
-                    Console.WriteLine("Thank you. Bye!");
+                    Console.WriteLine("Thank you. Good bye!");
                     break;
                 
                 default:
