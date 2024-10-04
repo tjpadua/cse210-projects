@@ -18,14 +18,15 @@ public class Scripture
         List<Word>_words = new List<Word>(numberToHide);
     }
 
-    public void GetDisplayText()
+    public string GetDisplayText()
     {
-        Console.WriteLine("");
+        //Console.WriteLine("");
+        return "This is the Verse.";
     }
 
-    public void IsCompletelyHidden()
+    public bool IsCompletelyHidden()
     {
-        
+        return false;
     }
 
 }

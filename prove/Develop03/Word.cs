@@ -3,7 +3,7 @@ using System;
 public class Word
 {
     private string _text;
-    private bool _isHididden;
+    private bool _isHidden = false;
 
     public Word(string text)
     {
@@ -13,21 +13,31 @@ public class Word
 
     public void Hide()
     {
-        //Console.WriteLine("AAA");
+        _isHidden = true;
     }
 
     public void Show()
     {
         //Console.WriteLine("BBB");
+        _isHidden = false;
     }
 
-    public void IsHididden()
+    public bool IsHidden()
     {
-
+        return _isHidden;
     }
 
-    public void GetDisplayText()
+    public string GetDisplayText()
     {
-        //Console.WriteLine("");
+        if (IsHidden())
+        {
+            return "";
+        }
+
+        else
+        {
+            return _text;
+        }
+    
     }
 }
