@@ -31,7 +31,7 @@ class Program
                 
                 case "quit":
                     running = false;
-                    Console.WriteLine("Thank you. Good bye!");
+                    Console.WriteLine("\nThank you. Good bye!\n");
                     break;
                 
                 default:
