@@ -2,51 +2,42 @@ using System;
 
 class Program
 {
-    List<Scripture> scriptures = 
+    // List<Scripture> scriptures = 
 
-        new List<Scripture>
-    {    
-        new Scripture(new Reference("Proverbs", 3, 5, 6) , "Trust in the Lord with all thine heart; and lean not unto thine own understanding. In all thy ways acknowledge him, and he shall direct thy paths."),
-        new Scripture(new Reference("John", 3, 16), "For God so loved the world, that he gave his only begotten Son, that whosoever believeth in him should not perish, but have everlasting life.")
-    };
-
+    //     new List<Scripture>
+    // {    
+    //     new Scripture(new Reference("Proverbs", 3, 5, 6) , "Trust in the Lord with all thine heart; and lean not unto thine own understanding. In all thy ways acknowledge him, and he shall direct thy paths."),
+    //     new Scripture(new Reference("John", 3, 16), "For God so loved the world, that he gave his only begotten Son, that whosoever believeth in him should not perish, but have everlasting life.")
+    // };
 
     static void Main(string[] args)
     {
-        //Scripture scripture = new Scripture();       
-        //Word word = new Word();
-        //Reference reference = new Reference();
-        bool running = true;
+        Reference reference = new Reference("Proverbs", 3, 5, 6);
+        Scripture scripture = new Scripture(reference, "Trust in the Lord with all thine heart; and lean not unto thine own understanding. In all thy ways acknowledge him, and he shall direct thy paths.");
 
-        Scripture scripture = new Scripture(new Reference("Proverbs", 3, 5, 6) , "Trust in the Lord with all thine heart; and lean not unto thine own understanding. In all thy ways acknowledge him, and he shall direct thy paths.");
-        Console.Write(scripture.GetDisplayText());
-
-        while (running)
+        while (true)
         {
-            Console.WriteLine("\nPress enter to continue or type 'quit' to finish: ");
+            Console.WriteLine(scripture.GetDisplayText());
+            Console.WriteLine("\nPress Enter to hide more words, or type 'quit' to exit.");
+            string userInput = Console.ReadLine();
 
-
-            switch (Console.ReadLine())
+            if (scripture.IsCompletelyHidden())
             {
-                
-                case "quit":
-                    running = false;
-                    Console.WriteLine("\nThank you. Good bye!\n");
-                    break;
-                
-                default:
-                    scripture.HideRandomWords(3);
-                    Console.Write(scripture.GetDisplayText());
-                    
-                    if (scripture.IsCompletelyHidden())
-                    {
-                        running = false;
-                    }
+                break;
+            }
 
-                    break;
+            if (userInput.ToLower() == "quit")
+            {
+                Console.WriteLine("\nThank you. Good bye!\n");
+                break;
+            }
+
+            else
+            {
+                scripture.HideRandomWords(3); 
+ 
             }
         } 
-
 
     }
 }

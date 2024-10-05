@@ -3,11 +3,12 @@ using System;
 public class Word
 {
     private string _text;
-    private bool _isHidden = false;
+    private bool _isHidden;
 
     public Word(string text)
     {
         _text = text;
+        _isHidden = false;
 
     }
 
@@ -18,7 +19,6 @@ public class Word
 
     public void Show()
     {
-        //Console.WriteLine("BBB");
         _isHidden = false;
     }
 
@@ -29,15 +29,6 @@ public class Word
 
     public string GetDisplayText()
     {
-        if (IsHidden())
-        {
-            return "";
-        }
-
-        else
-        {
-            return _text;
-        }
-    
+        return _isHidden? "____" : _text;    
     }
 }
