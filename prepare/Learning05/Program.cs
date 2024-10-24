@@ -4,6 +4,15 @@ class Program
 {
     static void Main(string[] args)
     {
-        Console.WriteLine("Hello Learning05 World!");
+        Assignment a1 = new Assignment("Trizsa Padua", "Calculus");
+        Console.WriteLine(a1.GetSummary());
+
+        MathAssignment a2 = new MathAssignment("\nIrene", "Integrals", "3.1", "41, 42, 43-50\n");
+        Console.WriteLine(a2.GetSummary());
+        Console.WriteLine(a2.GetHomeworkList());
+
+        WritingAssignment a3 = new WritingAssignment("Kyle Montero", "Travel", "The Bon Voyage");
+        Console.WriteLine(a3.GetSummary());
+        Console.WriteLine(a3.GetWritingInformation());
     }
 }
