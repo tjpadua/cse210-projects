@@ -61,7 +61,7 @@ public class ReflectingActivity : Activity
         Console.Clear();
 
         // displays the prompt
-        Console.WriteLine("Consider the following prompt:");
+        Console.WriteLine("\nConsider the following prompt:");
         Console.WriteLine($"\n--- {prompt} ---\n");
         Console.WriteLine("When you have something in mind, press enter to continue.");
         Console.ReadKey();
@@ -70,7 +70,7 @@ public class ReflectingActivity : Activity
     public void DisplayQuestions(int duration)
     {
         // displays question into
-        Console.WriteLine("\nNow, reflect on the following questions as they related to this experience.");
+        Console.WriteLine("\nNow ponder on each of the following questions as they related to this experience.");
         Console.WriteLine($"You may begin in ");
         ShowCountDown(3);
 
