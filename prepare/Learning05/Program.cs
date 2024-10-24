@@ -11,7 +11,7 @@ class Program
         Console.WriteLine(a2.GetSummary());
         Console.WriteLine(a2.GetHomeworkList());
 
-        WritingAssignment a3 = new WritingAssignment("Kyle Montero", "Travel", "The Bon Voyage");
+        WritingAssignment a3 = new WritingAssignment("\nKyle Montero", "Travel", "The Bon Voyage");
         Console.WriteLine(a3.GetSummary());
         Console.WriteLine(a3.GetWritingInformation());
     }
