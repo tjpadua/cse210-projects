@@ -7,7 +7,7 @@ class Program
         Assignment a1 = new Assignment("Trizsa Padua", "Calculus");
         Console.WriteLine(a1.GetSummary());
 
-        MathAssignment a2 = new MathAssignment("\nIrene", "Integrals", "3.1", "41, 42, 43-50\n");
+        MathAssignment a2 = new MathAssignment("\nIrene Padua", "Integrals", "3.1", "41, 42, 43-50\n");
         Console.WriteLine(a2.GetSummary());
         Console.WriteLine(a2.GetHomeworkList());
 
